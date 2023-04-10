@@ -17,9 +17,6 @@ from pytc2.sistemas_lineales import pzmap, GroupDelay, bodePlot
 R2_lista = [1, 2, 3]
 R1 = 2
 
-
-
-
 plt.close('all')
 
 for i in range(len(R2_lista)):
