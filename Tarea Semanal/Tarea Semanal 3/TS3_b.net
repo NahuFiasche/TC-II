@@ -1,0 +1,12 @@
+* C:\users\nahu\Escritorio\TC_II\Mi Repo\TC-II\Tarea Semanal\Tarea Semanal 3\TS3_b.asc
+C1 N001 0 100n
+R1 N001 Vi 848.83
+XU1 N002 N001 N002 opamp Aol=100K GBW=10Meg
+R2 N003 N002 848.83
+L1 N003 Vo 72.05m
+C2 Vo 0 100n
+V1 Vi 0 AC 10m
+.lib opamp.sub
+.ac dec 100 10 5k
+.backanno
+.end
