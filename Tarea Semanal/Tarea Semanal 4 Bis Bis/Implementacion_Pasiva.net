@@ -1,0 +1,21 @@
+* C:\users\nahu\Escritorio\TC_II\Mi Repo\TC-II\Tarea Semanal\Tarea Semanal 4 Bis Bis\Implementacion_Pasiva.asc
+R1 N001 Vi 7.6
+L1 N001 0 {L1}
+C1 N001 0 {C1}
+XU1 N002 N001 N002 opamp Aol=100K GBW=10Meg
+L2 N003 0 {L2}
+C2 N003 0 {C2}
+XU2 N004 N003 N004 opamp Aol=100K GBW=10Meg
+R2 N003 N002 13.73
+L3 Vo 0 {L3}
+C3 Vo 0 {C3}
+R3 Vo N004 17.17
+V1 Vi 0 AC 1
+.lib opamp.sub
+.param C1=1/fo L1=1/fo R1=7.599
+.param C2=1.24/fo L2=1/fo
+.param C3=0.8/fo L3=1/fo
+.ac dec 1000 100m 3
+.param fo=2*pi
+.backanno
+.end
