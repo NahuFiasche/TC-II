@@ -1,0 +1,21 @@
+* C:\users\nahu\Escritorio\TC_II\Mi Repo\TC-II\TPL1\UAF42vprueeba.asc
+XU1 N001 N005 HPout opamp Aol=100K GBW=10Meg
+XU2 N003 0 BPout opamp Aol=100K GBW=10Meg
+XU3 N004 0 LPout opamp Aol=100K GBW=10Meg
+C1 BPout N003 1000pF
+C2 LPout N004 1000pF
+R2 HPout N001 50K
+R1 LPout N001 50K
+R4 BPout N005 50K
+RF1 N003 HPout 100K
+RF2 N004 BPout 98.8K
+RQ N005 0 12.15K
+RG N001 Vi 49.7K
+Rx LPout N002 17K
+Cf 0 N002 10n
+V1 Vi 0 AC 1 0
+XU4 Vo N002 Vo opamp Aol=100K GBW=10Meg
+.ac dec 1000 200 5K
+.lib opamp.sub
+.backanno
+.end
