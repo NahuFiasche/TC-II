@@ -1,0 +1,11 @@
+* C:\users\nahu\Escritorio\TC_II\Mi Repo\TC-II\Tarea Semanal\Tarea Semanal 6\Ej #2\Draft1.asc
+L1 Vi N001 {1.5/wo}
+L3 N001 Vo {0.5/wo}
+C2 N001 0 {(4/3)/wo}
+R1 Vo 0 1
+V1 Vi 0 AC 1
+.ac dec 100 0.01 5
+.param wo = 2 *  pi * f
+.param f = 1
+.backanno
+.end
