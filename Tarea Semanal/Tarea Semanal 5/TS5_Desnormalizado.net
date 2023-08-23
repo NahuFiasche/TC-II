@@ -1,0 +1,24 @@
+* C:\users\nahu\Escritorio\TC_II\Mi Repo\TC-II\Tarea Semanal\Tarea Semanal 5\TS5_Desnormalizado.asc
+XU1 N001 N002 Vo opamp Aol=100K GBW=10Meg
+XU2 N002 N005 N004 opamp Aol=100K GBW=10Meg
+Ca N006 Vi {Ca}
+Ra N006 0 {Ra}
+V1 Vi 0 AC 10m
+XU3 N003 N006 N003 opamp Aol=100K GBW=10Meg
+C1 N001 N003 {C1}
+R1 N001 0 {R1}
+R2 N004 N001 {R2}
+R4 N002 N004 {R}
+R3 Vo N002 {R}
+C2 N005 Vo {C1}
+R5 N005 N003 {R}
+.lib opamp.sub
+.param Ca=1/(wo) Ra=1
+.param C1=1/(wo) R=9/8 R1=1 R2=8/9
+.param wo=2*pi*300
+.ac dec 1000 1 10K
+* Parametros Etapa 1
+* Parametros Etapa 2
+* Parametros de Simulacion
+.backanno
+.end

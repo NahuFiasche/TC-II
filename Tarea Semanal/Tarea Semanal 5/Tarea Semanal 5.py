@@ -18,8 +18,8 @@ from pytc2.sistemas_lineales import pzmap, GroupDelay, bodePlot, analyze_sys
 
 
 # coeficientes de la transferencia Pasabajos Prototipo
-Tlp_num = np.array([1, 0, 9])
-den_aux = np.polymul([1, 1], [1, 2, 1])
+Tlp_num = np.array([1/9, 0, 1])
+den_aux = np.polymul([1, 1], [1, 1, 1])
 Tlp_den = np.array(den_aux)
 
 # Visualización de Pasabajos Prototipo 
