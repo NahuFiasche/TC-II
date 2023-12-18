@@ -1,0 +1,11 @@
+* C:\users\nahu\Escritorio\TC_II\Mi Repo\TC-II\Tarea Semanal\Tarea Semanal 13\TS13.asc
+Vg N001 0 SINE() AC 1 Rser=1
+L1 N001 N002 {L1}
+L2 N002 N003 {L2}
+C1 N002 0 {C1}
+RL N003 0 1
+.param fo=1 wo=2*pi*fo L1=1.225/wo C1=0.553/wo L2=0.192/wo
+.ac dec 1000 0.1 50
+.net I(RL) Vg
+.backanno
+.end
